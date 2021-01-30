@@ -15,7 +15,7 @@ const handler: NextApiHandler = async (req, res) => {
 
     const results = await query(
       `
-      INSERT INTO entries (title, content)
+      INSERT INTO entries (title, cotent)
       VALUES (?, ?)
       `,
       [filter.clean(title), filter.clean(content)]
